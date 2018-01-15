@@ -21,7 +21,7 @@ class App extends Component {
         this.setState({ value: event.target.value });
     }
 
-    handleSubmit(event) {
+    handleSubmit() {
         debugger;
         let value = this.state.value;
         let beforeMovies = this.state.allMovies.filter(movie => {
@@ -39,7 +39,7 @@ class App extends Component {
             filteredMovies: beforeMovies
         });
         console.log(beforeMovies);
-        event.preventDefault();
+        //event.preventDefault();
     }
 
     componentDidMount() {
@@ -60,7 +60,7 @@ class App extends Component {
     updateSearch(event) {
         this.setState({ search: event.target.value.substr(0, 20) });
     }
-    
+
     render() {
         let size = this.state.size;
         let searchedMovies = this.state.filteredMovies.slice(0, size).filter((movie) => {
