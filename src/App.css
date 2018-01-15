@@ -1,0 +1,36 @@
+body {
+    font-size: 25px;
+}
+
+.filteredMovies {
+    border: 1px solid black;
+    float: left;
+    width: 49%;
+    display: inline;
+    height: 220px;
+    padding: 5px;
+    margin: 3px;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    background: #00aced;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 870px;
+}
+
+input {
+    width: 1000px;
+    height: 50px;
+    margin: auto 400px;
+    font-size: 25px;
+}
+
+select {
+    width: 100px;
+    height: 50px;
+    display: inline;
+}
